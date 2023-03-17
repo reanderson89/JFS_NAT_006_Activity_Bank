@@ -20,9 +20,9 @@
 
 ## Begin this activity by... ##
 
-- Add security to the main branch. Go to "Settings > Branches > Add Rule". In the Add Rule page you will need to type "main" in the "Branch Name Pattern" text box at the top. make sure your settings look like this image, and remember that it is case sensitive... "Main" does not equal "main". After you have everything selected like the image below click the green "Create" button.
+- Add security to the main branch. Go to "Settings > Branches > Add Rule". In the Add Rule page you will need to type "main" in the "Branch Name Pattern" text box at the top. make sure your settings look like this image, and remember that it is case sensitive... "Main" does not equal "main". After you have everything selected like the image below click the green "Save Changes" button.
 
-![image](./photos/branch-security.png)
+![image](./photos/branch_security.png)
 
 - Have a scrum meeting!
 
