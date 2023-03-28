@@ -6,7 +6,9 @@
 
 - clone the repository to your preferred directory on your computer.
 
-- open the repository in your VScode by using the `code .` command while in your repo in your terminal.
+- "cd" into the repository that you just cloned.
+
+- open the repository in your VScode by using the `code .` command while in your repo in your terminal. If the command does not work please follow this [link for Windows](https://stackoverflow.com/questions/50182417/code-command-is-not-working/73137747#73137747) or [link for MacOS](https://stackoverflow.com/questions/50182417/code-command-is-not-working) to help you enable it. If all else fails you can just do File > Open Folder > git-branch-practice
 
 - Once your repo is open in VScode add an `index.html` file and use the `!` shortcut to create your starting code.
 
