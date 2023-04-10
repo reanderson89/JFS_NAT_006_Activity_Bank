@@ -6,9 +6,7 @@
 
 # Copy the necessary files and folders to your project (photos folder, index.html, README.md), then read the entire README before moving on. #
 
-- In this activity your group is tasked to create the ABC's by taking pictures of various items around you or finding them from the web and adding them to the index.html file to display them all. 
-
-- The photos that you take should be uploaded to the "photos" folder and then linked using the "src" attribute in the "img" tags in the index.html file. You can also use the web address for pictures found online instead.
+- In this activity your group is tasked to create the ABC's by finding pictures from the web and adding them to the index.html file to display them all. 
 
 - Letters A and B have already been completed. Use them as a reference for all other letters you have to complete. 
 
