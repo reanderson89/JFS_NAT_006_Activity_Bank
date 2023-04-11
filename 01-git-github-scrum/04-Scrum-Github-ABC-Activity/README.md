@@ -2,7 +2,6 @@
 
 - One person will need to create a repository and then add their team members as collaborators. While in your repository on github go to "Settings > Collaborators > Add People" and then search for your teammates by name or email. They will be sent an email to join the repo, they will need to open the email and follow the link to become an active member of the repo.
 
-# Copy the necessary files and folders to your project (photos folder, index.html, README.md), then read the entire README before moving on. #
 
 - In this activity your group is tasked to create the ABC's by finding pictures from the web and adding them to the index.html file to display them all. 
 
