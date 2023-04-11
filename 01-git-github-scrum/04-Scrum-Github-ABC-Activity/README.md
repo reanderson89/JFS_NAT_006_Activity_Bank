@@ -22,6 +22,8 @@
 
 ![image](./photos/branch_security.png)
 
+- [Publish your page](https://github.com/reanderson89/JFS_NAT_006_Activity_Bank/tree/main/01-git-github-scrum/03-github-pages). Since you do not have any HTML yet your README.md will be displayed on the live page in the meantime.
+
 - Have a scrum meeting!
 
 - [Link to scrum walk-through](https://docs.google.com/document/d/1vmgCw0jRXkeVc6nimG8Qp0-GQ_DNu4Huj05krMAiM6c/edit?usp=sharing")
