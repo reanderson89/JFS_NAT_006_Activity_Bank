@@ -8,13 +8,43 @@
 
 - In this activity your group is tasked to create the ABC's by finding pictures from the web and adding them to the index.html file to display them all. 
 
-- Letters A and B have already been completed. Use them as a reference for all other letters you have to complete. 
+- Here is an example of some starter code with the Letter A already done, please update some of the information if you copy and paste it:
 
-- You do not have to add any additional HTML code, you just need to add text inside of the existing "h1", "h3" tags and the "src" attributes inside of the "img" tags. 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 
-- [Link for documentation on the `<img>` tags](https://www.w3schools.com/tags/tag_img.asp)
+    <header>
+        <h1>ABC Scrum Activity</h1>
+        <h2>Team</h2>
+        <ul>
+            <li>Robert Anderson</li>
+            <li>Steven Castro</li>
+            <li>Melissa Averinos</li>
+        </ul>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <h3>Letter A</h3>
+            <p>A is for Anchor</p>
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Jq49Y0lS2OsuDJt-zZ8pSgHaHa%26pid%3DApi&f=1&ipt=8ef3b68e6a33345ffbce3cd048a31a505fffe7652e9da3a8de7ef7780e6cf8a7&ipo=images" alt="anchor">
+        </section>
+        <hr>
+    </main>
+</body>
+</html>
+```
 
-- [Link for documentation on the `<h1> and <h3> tags`](https://www.w3schools.com/tags/tag_img.asp)
+- You will need to add a section for each letter in the alphabet to complete the project. Use the example given above for help.
+
 
 ## Begin this activity by... ##
 
