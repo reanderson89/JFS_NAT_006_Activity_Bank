@@ -1,7 +1,5 @@
 ## ABC-scrum-github-activity ##
 
-- [Here is a link to this README.md in the browser, you will be able to see the pictures there.](https://github.com/reanderson89/jfs-den2-activity-bank/tree/main/01-git-github-scrum/04-Scrum-Github-ABC-Activity)
-
 - One person will need to create a repository and then add their team members as collaborators. While in your repository on github go to "Settings > Collaborators > Add People" and then search for your teammates by name or email. They will be sent an email to join the repo, they will need to open the email and follow the link to become an active member of the repo.
 
 # Copy the necessary files and folders to your project (photos folder, index.html, README.md), then read the entire README before moving on. #
