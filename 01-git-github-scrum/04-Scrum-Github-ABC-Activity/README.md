@@ -6,9 +6,7 @@
 
 # Copy the necessary files and folders to your project (photos folder, index.html, README.md), then read the entire README before moving on. #
 
-- In this activity your group is tasked to create the ABC's by taking pictures of various items around you or finding them from the web and adding them to the index.html file to display them all. 
-
-- The photos that you take should be uploaded to the "photos" folder and then linked using the "src" attribute in the "img" tags in the index.html file. You can also use the web address for pictures found online instead.
+- In this activity your group is tasked to create the ABC's by finding pictures from the web and adding them to the index.html file to display them all. 
 
 - Letters A and B have already been completed. Use them as a reference for all other letters you have to complete. 
 
@@ -24,13 +22,17 @@
 
 ![image](./photos/branch_security.png)
 
+- [Publish your page](https://github.com/reanderson89/JFS_NAT_006_Activity_Bank/tree/main/01-git-github-scrum/03-github-pages). Since you do not have any HTML yet your README.md will be displayed on the live page in the meantime.
+
 - Have a scrum meeting!
 
 - [Link to scrum walk-through](https://docs.google.com/document/d/1vmgCw0jRXkeVc6nimG8Qp0-GQ_DNu4Huj05krMAiM6c/edit?usp=sharing")
 
-- Your team should create a project board and then create an issue for EVERY letter. This is repetitive, and is meant to be used as practice. Start your first sprint by prioritizing the first easy items(letters) people have access to, once everyone is done with their letter, close the issues and then move to the next letters.
+- Your team should create a project board and then create an issue for EVERY letter. This is repetitive, and is meant to be used as practice.
 
-- Practice branching in your repository by creating a new branch for every letter that you work on. For example if you personally get tasked with letter C, then create a branch called "letterC". Once you finish that letter and are done with the branch, make sure to create a new branch for your next letter. For example, if you are next tasked with letter F your branch would be "letterF".
+- Start your first sprint by moving one of the assigned letters to "In progress" for each person. Once everyone is done with their letter, close the issues and then move to the next letters.
+
+- Practice branching in your repository by creating a new branch for every letter that you work on. For example if you personally get tasked with issue "#3 letter C", then create a branch called "3-letterC". Including the issues number on the branch name is helpful looking through old branches if needed. Once you finish that issue and are done with the branch, make sure to create a new branch for your next issue. For example, if you are next tasked with "#6 letter F" your branch would be "6-letterF".
 
 ## Useful commands for creating and moving to branches...
     - `git branch` (shows current local branches)
