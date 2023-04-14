@@ -2,7 +2,7 @@
 
 For this activity you are tasked to read the content of each html element from the index.html file and complete the styling request from them.
 
-# Start by:
+# Start by: (It is always recommended to create a branch for each activity that we do, this way you can keep your main branch clean)
 - Create a new branch for this activity:
     - git checkout -b 03-visual-rules 
 - When you finish the activity make sure to "add" your changes and "commit" them:
