@@ -9,27 +9,15 @@
 ![image](./assets/none.png) 
 ![image](./assets/source.png) 
 
-**4. This will produce a URL to a live page just above the dropdown menu you clicked on. It may not work for a minute or two while it has the blue background color.**
+**4. This will produce a URL to a live page just above the dropdown menu you clicked on. It may not show up for a minute or two, so try to refresh the page.**
 
-![image](./assets/almost-live-url.png) 
-
-**5. Refresh the page after a minute or two and you will notice that the background for the URL is now green. Click the URL to test that it works then add it to your README.md.**
-
-![image](./assets/live-url.png)
-
-**6. After you have added your URL to your README.md, push those changes to github. You should now see the live link on your repository home page on github.**
+**6. Add the live URL to your README.md, push those changes to github. You should now see the live link on your repository home page on github.**
 
 ![image](./assets/url-in-readme.png) 
 
 **7. Lastly, submit the URL for your live page for attendance.**
 
 
-
-## BONUS
-
-**1. Make your font style italic and/or bold on your README.md**
-
-**2. Take a screenshot of your live page and display it on your README.md**
 
 
 
