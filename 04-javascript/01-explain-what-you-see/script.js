@@ -1,3 +1,4 @@
+// this line of code creates a popup box and asks for my name
 var userName = prompt("What's your name?");
 
 if (userName === null){
@@ -40,3 +41,5 @@ if (confirmSleep) {
 } else {
   alert("So sorry to hear that" + " " + userName);
 }
+
+
