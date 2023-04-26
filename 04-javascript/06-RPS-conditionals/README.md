@@ -22,7 +22,7 @@
 ## Start with:
 
 - Creating variables for the two players and hard-code either "rock", "paper", or "scissors" on them.
-- Create the logic to check the variables against each other to see who the winner will be. Use the above "Rules" to help you build the logic.
+- Create the conditions to check the variables against each other to see who the winner will be. Use the above "Rules" to help you build the logic.
 - However the game ends, there should be a result printed to the console.
 
 ## Bonus
