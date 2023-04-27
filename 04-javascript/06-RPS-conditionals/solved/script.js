@@ -1,30 +1,48 @@
-// ## Rules for rock-paper-scissors
+let userInput = prompt("Type 'r' for rock, 'p' for paper, or 's' for scissors.");
+let randomNum = Math.floor(Math.random() * 3) // Math.random() random decimal from 0.0000 - .999999999999999
+let compChoice;
 
-// * Rock: beats scissors, loses to paper, and ties against itself.
-// * Paper: beats rock, loses to scissors, and ties against itself.
-// * Scissors: beats paper, loses to rock, and ties against itself.
+// This "if else" statement does the same thing as the switch statement below it
+// if(randomNum === 0){
+//     compChoice = "r"
+// } else if(randomNum === 1){
+//     compChoice = "p"
+// } else {
+//     compChoice = "s"
+// }
 
-// ## Start with:
-
-// - Creating variables for the two players and hard-code either "rock", "paper", or "scissors" on them.
-let player1 = "paper";
-let player2 = "rock";
-
-console.log("Player1: ", player1)
-console.log("Player2: ", player2)
-
-// - Create the conditions to check the variables against each other to see who the winner will be. Use the above "Rules" to help you build the logic.
-if (player1 === player2) {
-  console.log("it's a tie!");
-  // writing conditions for when player1 wins
-} else if (
-  (player1 === "rock" && player2 === "scissors") ||
-  (player1 === "paper" && player2 === "rock") ||
-  (player1 === "scissors" && player2 === "paper")
-) {
-  console.log("Player 1 wins!");
-} else {
-  console.log("Player 2 wins!")
+switch (randomNum) {
+    case 0:
+        compChoice = "r"
+        break;
+    case 1:
+        compChoice = "p"
+        break;
+    default:
+        compChoice = "s"
+        break;
 }
 
-// - However the game ends, there should be a result printed to the console.
+console.log("userInput: ", userInput)
+console.log("compChoice: ", compChoice)
+
+if (userInput === compChoice) {
+    alert(`
+    You chose: ${userInput}
+    Computer chose: ${compChoice}
+    It's a tie!`);
+} else if (
+  (userInput === "r" && compChoice === "s") ||
+  (userInput === "p" && compChoice === "r") ||
+  (userInput === "s" && compChoice === "p")
+) {
+    alert(`
+     You chose: ${userInput}
+     Computer chose: ${compChoice}
+     You win!`);
+} else {
+    alert(`
+     You chose: ${userInput}
+     Computer chose: ${compChoice}
+     You lose!`);
+}
