@@ -1,4 +1,4 @@
-const strArr = ["Spring", "Summer", "Fall", "Winter"]
+const testData = ["Spring", "Summer", "Fall", "Winter"]
 
 
 
