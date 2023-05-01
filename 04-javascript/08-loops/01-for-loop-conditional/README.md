@@ -9,6 +9,6 @@
 
 ## Feel free to use the 08-loops branch for each activity in the 08-loops folder
 
-- For this activity you need to write a "for" loop that will log each string from the given array to the console.
+- For this activity you need to write a "for" loop that will log each item from the given array to the console.
 
-- Make sure that you are only logging one item in the array each time the loop runs, and not the entire array.
+- Write a condition that checks to see if the current item is "Summer", if it is then log "Gross" to the console.
