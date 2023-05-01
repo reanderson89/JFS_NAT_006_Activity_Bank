@@ -50,16 +50,6 @@ const playGame = function(){
          Computer chose: ${compChoice}
          You lose!`);
     }
-
 }
 
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
 playGame()
