@@ -8,6 +8,7 @@ let prices = [100, 150, 200, 250]
 let discount = .2
 
 const addDiscount = (pricesArr, discountAmount) => {
+    // .map() does return a new array. So we assign it to a new variable.
     let discountedPrices = pricesArr.map(price => price * (1 - discountAmount));
     return discountedPrices;
 }

@@ -7,6 +7,11 @@ let fruits = ["apple", "banana", "cherry", "date"]
 
 let maxLength = 5
 
+// the .filter() returns a new array filled with items that evaluate to true, based on the condition given.
+let shortFruits = fruits.filter(fruit => fruit.length <= maxLength)
+
+console.log(shortFruits)
+
 
 
 
@@ -21,3 +26,13 @@ let maxLength = 5
 // Example output: [2, 4, 6, 8, 10]
 
 let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+const checkOddOrEven = (numsArr) => {
+    let evenNums = numsArr.filter(num => num % 2 === 0)
+    return evenNums
+}
+
+let result = checkOddOrEven(nums);
+console.log(result);
+
+

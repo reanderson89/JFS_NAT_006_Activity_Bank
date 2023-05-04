@@ -29,6 +29,7 @@ let nums = [1, 2, 3, 4, 5];
 
 const logOddOrEven = function(intArr){
 
+   // forEach does not return a value, so we would not assign it to a variable.
     intArr.forEach(num => {
     if(num % 2 === 0){
         console.log(`${num} is even`)
