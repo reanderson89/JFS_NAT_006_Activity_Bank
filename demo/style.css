@@ -1,0 +1,57 @@
+/* Mid-century modern advertising style */
+body {
+    font-family: 'Futura', 'Helvetica', sans-serif;
+    background-color: #f6edd9;
+    color: #1f1f1f;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 1.5rem;
+    color: #f25c54;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #f2e2b7;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"] {
+    font-family: 'Futura', 'Helvetica', sans-serif;
+}
+
+.btn {
+    background-color: #2d7b6c;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #236352;
+}
+
+table {
+    background-color: #f2e2b7;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f25c54;
+}
+
+td,
+th {
+    padding: 0.75rem 1.5rem;
+}
