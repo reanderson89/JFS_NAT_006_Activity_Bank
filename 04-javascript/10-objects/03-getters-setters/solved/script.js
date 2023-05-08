@@ -3,7 +3,7 @@
 // Use the privacy indicator on your properties that have getters and setters
 // Use the getters and setters under your object to change and display the values of the properties that they effect.
 
-const myCurrentCar = {
+const fordTaurus = {
     _make: "ford",
     _model: "taurus",
     _year: 1998,
