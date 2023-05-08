@@ -54,20 +54,16 @@ let joeBob = {
 // Use the above object to print the following items to the console
 
 // age
-console.log(joeBob.age)
+
 // first name and last name in the same line ( you will have to concat )
-console.log(`${joeBob.name.first} ${joeBob.name.last}`)
+
 // is joe bobs hair clean? If not then print "Joe Bob should wash his hair."
-if(!joeBob.hair.isClean){
-    console.log(`${joeBob.name.first} ${joeBob.name.last} should wash his hair`)
-}
+
 // the entire array of clothes
-console.log(joeBob.clothes)
+
 // the waist size of joe bobs jeans
-console.log(joeBob.clothes[1].waist)
+
 // run the method incomingCall(), run it again but have the call go to voicemail instead.
-joeBob.clothes[1]["pocket contents"][1].incomingCall()
-joeBob.awake = false
-joeBob.clothes[1]["pocket contents"][1].incomingCall()
+
 // the "type" of the last object in the clothes array
-console.log(joeBob.clothes[joeBob.clothes.length - 1].type)
+
