@@ -3,7 +3,7 @@
 // Create a method in the object that "returns" a string that contains all 3 properties in a sentence.
 // print the return value of the method to the console
 
-const car = {
+const fordTaurus = {
     make: "ford",
     model: "taurus",
     year: 1998,
@@ -12,4 +12,6 @@ const car = {
     }
 }
 
-console.log(car.getInfo())
+
+
+console.log(fordTaurus.getInfo())
