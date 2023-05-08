@@ -1,53 +1,71 @@
-
-let wins = 0;
-let losses = 0;
-let ties = 0;
-
-const getUserChoice = function(){
-    let userChoice = prompt("please choose 'r' for rock, 'p' for paper, or 's' for scissors");
-    return userChoice;
+// user object
+const userObj = {
+  wins: 0,
+  losses: 0,
+  ties: 0,
+  choice: "",
+  getChoice(){
+    this.choice = prompt("please choose 'r' for rock, 'p' for paper, or 's' for scissors")
+    return this.choice;
+  }
 }
 
-
-
-
-const getComputerChoice = function(){
-    return ["r","p","s"][Math.floor(Math.random() * 3)]
+const compObj = {
+  wins: 0,
+  losses: 0,
+  ties: 0,
+  choice: "",
+  getChoice(){
+    this.choice = ["r","p","s"][Math.floor(Math.random() * 3)]
+    return this.choice;
+  }
 }
 
-
-const playGame = function(){
-    let userChoice = getUserChoice();
-    let computerChoice = getComputerChoice();
+const gameObj = {
+  gamesPlayed: 0,
+  gamesToPlay: 0,
+  askGamesToPlay(){
+    this.gamesToPlay = Number(prompt("How many games would you like to play?"))
+    console.log(this.gamesToPlay);
+  },
+  playGame(){
+    let userChoice = userObj.getChoice();
+    let computerChoice = compObj.getChoice();
     alert(`You chose: ${userChoice}\nComputer chose: ${computerChoice}`)
 
     if ((userChoice === "r" && computerChoice === "s") ||
             (userChoice === "s" && computerChoice === "p") || 
             (userChoice === "p" && computerChoice === "r")) {
-            wins++;
-            alert("You've won " + wins + " time(s)!");
+            userObj.wins++;
+            compObj.losses++;
+            alert("You've won " + userObj.wins + " time(s)!");
           } else if (userChoice === computerChoice) {
-            ties++;
-            alert("You've tied " + ties + " time(s).");
+            userObj.ties++;
+            compObj.ties++;
+            alert("You've tied " + userObj.ties + " time(s).");
           } else {
-            losses++;
-            alert("You've lost " + losses + " time(s).");
+            userObj.losses++;
+            compObj.wins++;
+            alert("The computer has won " + compObj.wins + " time(s).");
           }
+    this.gamesPlayed++
+        //   4th hint
+    alert(`Current Standings:\nWins: ${userObj.wins}\nLosses: ${userObj.losses}\n Ties: ${userObj.ties}`)
 
-    alert(`Current Standings:\nWins: ${wins}\nLosses: ${losses}\n Ties: ${ties}`)
 
-    // asks user if they want to play again
-    let playAgain = confirm("Do you want to play again?");
-    
-    let totalPlays = wins + losses + ties;
-
-    // checks to see if they have played less then 10 times, if so it will replay the game.
-    while(playAgain === true && totalPlays < 10){
-        playGame();
+    if(this.gamesPlayed < this.gamesToPlay){
+      console.log(this.gamesPlayed)
+      console.log(this.gamesToPlay)
+        this.playGame();
     }
+  }
 }
 
-playGame();
+gameObj.askGamesToPlay();
+gameObj.playGame();
+
+
+
 
 
 
