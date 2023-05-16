@@ -12,8 +12,11 @@
 
 // This async function gets the data and returns it
 const getUsers = async function(){
+    // make a request, get a response
     let response = await fetch("https://reqres.in/api/users")
+    // get the body of the response in a format we can use
     let users = await response.json()
+    // return the array of users from the body
     return users.data
 }
 
@@ -24,4 +27,3 @@ const displayUsers = async function(){
 }
 
 displayUsers()
-
