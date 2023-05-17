@@ -1,8 +1,15 @@
 # Build a Weather App
 
-For this activity you will be using a weather API from: https://www.weatherapi.com/ 
+For this activity you will be using a weather API from: https://www.weatherapi.com/  - (I believe this one is easier to use) or you could use this one https://openweathermap.org/api
 
 You will need to create a free account in order to get your own api-key. You can find the documentation on their website on how to write your url to get the information you need: https://www.weatherapi.com/docs/
+
+
+I used the https://openweathermap.org/api to complete the project:
+
+- Here is a weather app that I built using this weather API: https://reanderson89.github.io/weather-dashboard/
+
+- Here is the github repo for the project: https://github.com/reanderson89/weather-dashboard
 
 # We are not worried about how this application looks, just how it functions. 
     - The basic html has been created for you, please feel free to make it look better once you have full functionality.
