@@ -4,11 +4,19 @@ const cityForm = document.getElementById("city-form");
 const bonusBtnsDiv = document.getElementById("bonus-buttons");
 
 const getWeather = async function (city) {
-  const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=46e1df487c204aaea80231816211312&q=${city}&aqi=no`
-  );
-  const weatherData = await response.json();
-  return weatherData;
+  try {
+    const response = await fetch(
+      `https://api.weatherapi.com/v1/current.json?key=46e1df487c204aaea80231816211312&q=${city}&aqi=no`
+    );
+    if (!response.ok) {
+      throw new Error(``);
+    }
+    const weatherData = await response.json();
+    return weatherData;
+  } catch (err) {
+    WeatherError.displayWeatherError();
+    console.err(err);
+  }
 };
 
 const setCurrentCity = function (city) {
@@ -51,8 +59,7 @@ const createCityBtn = function (city) {
   bonusBtnsDiv.append(cityBtn);
 };
 
-const displayCurrentWeather = async function (city) {
-  const weatherData = await getWeather(city);
+const displayCurrentWeather = async function (weatherData) {
 
   weatherDiv.innerHTML = `<h1>${weatherData.location.name} ${weatherData.location.region}</h1>`;
   weatherDiv.innerHTML += `<h3>${weatherData.current.temp_f}</h3>`;
@@ -60,33 +67,47 @@ const displayCurrentWeather = async function (city) {
   weatherDiv.innerHTML += `<img src="${weatherData.current.condition.icon}" alt="${weatherData.current.condition.text}">`;
 };
 
+class WeatherError extends Error {
+  constructor() {
+    let name = "Weather Error";
+  }
+  static displayWeatherError() {
+    window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0";
+  }
+}
+
 // Step-3: take user input from the html and search for the city requested
-cityForm.addEventListener("submit", function (event) {
+cityForm.addEventListener("submit", async function (event) {
   event.preventDefault();
   const userCity = document.getElementById("city").value.trim();
   const containsHTML = /<[a-z][\s\S]*>/i.test(userCity);
   if (containsHTML) {
-    alert("Please do not enter any HTML as an input")
+    alert("Please do not enter any HTML as an input");
     return;
   }
-  if(userCity) {
-    displayCurrentWeather(userCity);
-    setCurrentCity(userCity);
-    setAllCities(userCity);
-    createCityBtn(userCity);
+  if (userCity) {
+    let weatherData = await getWeather(userCity)
+    if(weatherData){
+      displayCurrentWeather(weatherData);
+      setCurrentCity(userCity);
+      setAllCities(userCity);
+      createCityBtn(userCity);
+    }
+
   }
 });
 
-bonusBtnsDiv.addEventListener("click", function (event) {
+bonusBtnsDiv.addEventListener("click", async function (event) {
   if (event.target.localName === "button") {
-    displayCurrentWeather(event.target.innerText);
+    let weatherData = await getWeather(event.target.innerText)
+    if(weatherData){
+      displayCurrentWeather(weatherData);
+    }
   }
 });
 
 loadCurrentCity();
 loadCityBtns();
-
-
 
 // the below was a demo about how local storage stores values and returns them.
 // const setAllCities = function(city){
