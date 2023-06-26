@@ -83,6 +83,7 @@
 
     [DELETE](https://www.w3schools.com/sql/sql_delete.asp)
 
+**Extra Queries**
 
 6. **SELECT SPECIFIC FIELDS**: Retrieve specific fields from a table.
 
