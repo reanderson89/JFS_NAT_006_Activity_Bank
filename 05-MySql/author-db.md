@@ -23,7 +23,7 @@
         name VARCHAR(50) NOT NULL,
         birth_date DATE,
         nationality VARCHAR(50),
-        active_years VARCHAR(50)
+        active_years VARCHAR(50),
         PRIMARY KEY (author_id)
     );
     ```
