@@ -99,7 +99,7 @@
     [ORDER BY](https://www.w3schools.com/sql/sql_orderby.asp)
 
 
-9. **JOIN**: Select the name and book titles from the authors table given an author_id. INNER JOIN is the default JOIN.
+9. **JOIN**: Select the name from the authors table and titles from the books table e given an author_id. INNER JOIN is the default JOIN.
 
     [JOIN](https://www.w3schools.com/sql/sql_join.asp)
 
