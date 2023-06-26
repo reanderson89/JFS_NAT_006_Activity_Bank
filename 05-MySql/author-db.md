@@ -6,7 +6,7 @@
     ```sql
         DROP DATABASE IF EXISTS author_db;
         CREATE DATABASE author_db;
-        USE DATABASE author_db;
+        USE author_db;
     ```
     - DROP DATABASE IF EXISTS: Removes your database if it exists, which is good for development purposes because it allows you to start with a clean database when you run your SQL commands.
     - CREATE DATABASE: Creates the database with the name given.
